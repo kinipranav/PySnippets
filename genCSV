@@ -1,0 +1,9 @@
+import random
+
+x = 2021
+
+while x < 35000:
+  handle = open("c:/Users/xyz/Desktop/files/dump"+str(x)+".csv", "+w")
+  for itr in range(100000):
+    handle.write("s" + str(random.randint(100,180)) + "," + str(random.randint(180,300)) + "\n")
+  x += 1
